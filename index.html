@@ -11,24 +11,94 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-            <a href="" class="logo link"><span>Brit</span>lex</a>
-            <button type="button" class="btn" data-modal-open>
-                <svg class="burger" width="34px" height="19px">
-                    <use href="./images/burger-menu.svg#burger"  ></use>
-                </svg>
-            </button>
-            <nav class="nav">
-                    <ul class="nav-menu list">
-                    <li class="nav-menu-item"><a href="" class="nav-link link"> Home</a></li>
-                    <li class="nav-menu-item"><a href="" class="nav-link link"> Skills</a></li>
-                    <li class="nav-menu-item"><a href="" class="nav-link link">About us</a></li>
-                    <li class="nav-menu-item"><a href="" class="nav-link link">Pricing</a></li>
-                    <li class="nav-menu-item"><a href="" class="nav-link link">Contacts</a> </li>
-                </ul>
-                <a href="" class="lets link">Let's talk</a>
-            </nav>       
+    <header>
+           <div class="container">
+                <a href="" class="logo link">Brit<span>lex</span></a>
+                <button type="button" class="btn" data-modal-open>
+                    <svg class="burger" width="34px" height="19px">
+                        <use href="./images/burger-menu.svg#burger"  ></use>
+                    </svg>
+                </button>
+                <nav class="nav">
+                        <ul class="nav-menu list">
+                        <li class="nav-menu-item"><a href="" class="nav-link link"> Home</a></li>
+                        <li class="nav-menu-item"><a href="" class="nav-link link"> Skills</a></li>
+                        <li class="nav-menu-item"><a href="" class="nav-link link">About us</a></li>
+                        <li class="nav-menu-item"><a href="" class="nav-link link">Pricing</a></li>
+                        <li class="nav-menu-item"><a href="" class="nav-link link">Contacts</a> </li>
+                    </ul>
+                    <a href="" class="lets link">Let's talk</a>
+                </nav> 
+           </div>      
     </header>
+    <main>
+       <section class="hero">
+        <div class="hero-container">
+            <div>
+                <picture>
+                    <source
+                      srcset="
+                        ./images/len-320.webp  1x,
+                        ./images/len-320-2x.webp  2x,
+                        ./images/len-320-3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(max-width: 574px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/len-575.webp  1x,
+                        ./images/len-575-2x.webp  2x,
+                        ./images/len-575-3x.webp 3x
+                      "
+                      type="image/webp"
+                      media="(min-width:575px) and (max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/len-768.webp  1x,
+                        ./images/len-768-2x.webp  2x,
+                        ./images/len-768-3x.webp 3x
+                      "
+                      media="(min-width: 768px) and (max-width:991px)"
+                    />
+                    <source
+                    srcset="
+                      ./images/len-992.webp  1x,
+                      ./images/len-992-2x.webp  2x,
+                      ./images/len-992-3x.webp 3x
+                    "
+                    type="image/webp"
+                    media="(min-width:992px) and (max-width: 1599px)"
+                  />
+                    <source
+                      srcset="
+                        ./images/len-1600.webp  1x,
+                        ./images/len-1600-2x.webp  2x,
+                        ./images/len-1600-3x.webp 3x
+                      "
+                      media="(min-width: 1600px) "
+                    />
+
+                    <img
+                      src="./images/len-320.webp "
+                      alt="project photo"
+                    />
+  </picture>
+            </div>
+            <div class="lenstart">
+                <h1 class="learnb"> 
+                    Learn <span>Any Foreign </span>Language
+                </h1>
+                <p class="promo"> With our teachers who write a program
+                        for each student, you will be able to make
+                        your first sketch after the first lesson.
+                </p>
+                <button type="button" class="strtbtn">Get started</button>
+            </div>
+        </div >
+       </section> 
+    </main>
     </div>
     <div class="modal-back is-hidden" data-modal="">
     <div class="modal ">
