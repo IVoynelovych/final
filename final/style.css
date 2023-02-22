@@ -1,0 +1,936 @@
+html{
+    box-sizing: border-box;
+}
+html * ,::after, ::before{
+    box-sizing:inherit;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins';
+    display: block;
+}
+
+.nav{
+    display: none;
+}
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+.logo{
+    color: #000000;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+
+}
+.logo span{
+    color: #939393;
+}
+.about-768{
+    display: none;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.btn{
+    position: absolute;
+    top: 46px;
+    right: 16px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    margin-left: 167px;
+    margin-right: 100px;
+}
+.nav-link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #263238;
+}
+.lets{
+    box-sizing: border-box;
+    display: block;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 11px 40px 11px 40px;
+    border: 2px solid #263238;
+    border-radius: 5px;
+    color: #000000;
+}
+.is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .modal{
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+    padding-right: 7px;
+    padding-left: 15px;
+  }
+  .modal-back{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+.modal-logo {
+    display: block;
+    color: #939393;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C4C4C4;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.modal-btn {
+    position: absolute;
+    top: 25px;
+    right: 7px;
+    background-color: transparent;
+    border: transparent;
+}
+.modal-nav-menu {
+    margin-bottom: 69px;
+    margin-top: 46px;
+}
+.modal-nav-link {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 2.95;
+    color: #263238;
+}
+.cross{
+    display: block;
+}
+
+.modal-lets {
+    box-sizing: border-box;
+    display: block;
+    max-width: 291px;
+    min-height: 65px;
+    padding: 17px 99px 18px;
+    border: 2px solid #263238;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+}
+.modal-logo span{
+    color: black;
+}
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 320px;
+    padding-left: 14px;
+    padding-right: 16px;
+    padding-top: 36px;
+    margin: 0 auto;
+}
+.hero-container{
+    align-items: center;
+    position: relative;
+    max-width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 36px;
+    margin: 0 auto;
+}
+
+.learnb{
+    text-align: center;
+    font-weight: 600;
+font-size: 24px;
+line-height: 1.6;
+margin-left:40px ;
+margin-right: 40px;
+
+}
+.promo {
+    font-weight: 400;
+    font-size: 14px;
+text-align: center;
+margin-left: 4px;
+margin-right: 4px;
+
+color: #8F95A5;
+
+}
+.learnb::after{
+    content: "";
+    display: none;
+    background: url(./images/light.svg);
+    height: 90px;
+    width: 90px;
+    fill: #000000;
+}
+.strtbtn {
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 18px 99px;
+    color: #FFFFFF;
+    background: #263238;
+    border-radius: 5px;
+    margin: 0 4px 0 10px;
+}
+/*info*/
+.info-container {
+   
+    max-width: 320px;
+    padding:0 15px ;
+    margin: 53px auto 0;
+}
+.skill-element{
+    position: relative;
+    width: 290px;
+    margin-top:21px ;
+    background-color: #F5F5F5;
+}
+.bro {
+    fill: #263238;
+    display: block;
+    width: 230px;
+    height: 230px;
+    margin: 0 auto;
+}
+.speak-title {
+    font-weight: 600;
+font-size: 18px;
+margin-left: 13px;
+}
+.promo-speak {
+    font-weight: 400;
+font-size: 13px;
+color: #8F95A5;
+margin-bottom:30px ;
+margin-left: 16px;
+}
+.speak-btn {
+    position: absolute;
+    padding: 14px 43px;
+    border: none;
+    background-color: #263238;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+margin-left: 16px;
+margin-bottom:45px ;
+}
+.skill-btn{
+    padding: 14px 43px;
+    border: none;
+    background-color: #263238;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+margin-left: 16px;
+margin-bottom:44px ;
+border-radius: 5px;
+}
+.skil{
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+font-size: 24px;
+width: 62px;
+height: 80px;
+}
+.promo-write{
+    font-weight: 400;
+font-size: 12px;
+color: #8F95A5;
+margin-bottom:30px ;
+margin-left: 16px;
+}
+.promo-type{
+    font-weight: 400;
+font-size: 13px;
+color: #8F95A5;
+margin-bottom:30px ;
+margin-left: 16px;
+}
+.buss-container{
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 9px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.buss-svg{
+    margin-top: 24px;
+    width: 283px;
+    height: 283px;
+}
+.about{
+    margin: 0;
+    font-weight: 600;
+font-size: 24px;
+}
+.promo-line{
+    font-weight: 400;
+font-size: 13px;
+color: #8F95A5;
+margin-top: 23px;
+}
+.count{
+    font-weight: 400;
+font-size: 15px;
+color: #8F95A5;
+margin-bottom: 23px;
+
+}
+.count span{
+    display: block;
+    font-weight: 600;
+font-size: 24px;
+color: #2A3246;
+}
+.price-container{
+    max-width: 320px;
+    padding: 0 19px;
+}
+.price-title{
+    width: 85px;
+    height: 80px;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 auto 49px;
+}
+.price-lst{
+    text-align: center;
+}
+.price-svg{
+    display: block;
+    margin: 0 auto;
+    width: 248px;
+    height: 248px;
+}
+.price-disc{
+    font-weight: 600;
+    font-size: 18px;
+    color: #263238;
+    margin-top: 28px;
+}
+.price-promo{
+    font-size: 13px;
+line-height: 20px;
+color: #8F95A5;
+margin-top: 17px;
+}
+@media screen and (min-width:575px){
+    .buss-container{
+        margin-top: 84px;
+        max-width: 575px;
+        padding: 0 33px 0 32px;
+        margin-top: 83px;
+    }
+    .about{
+        font-weight: 600;
+font-size: 30px;
+    }
+    .buss-svg{
+        width: 352px;
+height: 352px;
+    }
+    .promo-line{
+        margin-top: 25px;
+        font-weight: 400;
+font-size: 14px;
+    }
+    .all-users{
+        display: flex;
+        gap: 75px;
+        padding-left: 53px;
+    }
+    .container{
+        max-width: 575px;
+        padding-left: 32px;
+        padding-right: 50px;
+        padding-top: 39px;
+    }
+    .hero-container{
+        max-width: 575px;
+        padding-left: 42px;
+        padding-right: 42px;  
+    }
+    .skill-element{
+        width: 240px;
+    }
+    .skill-lst{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .skill-btn{
+        margin-top: 134px;
+        margin-bottom: 36px;
+        padding: 14px 56px;
+    }
+    .speak-btn{
+        margin-bottom: 36px;
+        padding: 14px 56px;
+    }
+    .lenpic{
+        width: 424px;
+        height: 424px;
+        margin: 0 36px;
+    }
+    .learnb{
+        width: 491px;
+        font-weight: 600;
+        font-size: 34px;
+        margin: 0;
+    }
+    .promo{
+        margin-top:26px ;
+        font-size: 16px;
+        width: 486px;
+    }
+    .strtbtn{
+        font-size: 18px;
+        padding: 24px 101px;
+        margin: 0 93px;
+        margin-top: 37px;
+        width: 305px;
+    }
+    .info-container{
+        max-width: 575px;
+        padding: 0 32px;
+    }
+    .btn{
+        top: 50px;
+        right: 50px;
+    }
+    .logo, .modal-logo{
+        font-size: 30px;
+    }
+    .burger{
+        width: 42px;
+        height: 24px;
+    }
+    .modal {
+        padding-top: 48px;
+        padding-right: 32px;
+        padding-left: 33px;
+    }
+    .modal-btn{
+        right: 87px;
+        top: 50px;
+    }
+    .cross{
+        width: 39px;
+        height: 39px;
+    }
+    .modal-nav-menu {
+        margin-top: 35px;
+    }
+    .modal-lets{
+        max-width: 330px;
+        height: 70px;
+        font-size: 22px;
+        padding: 18px 114px 18px 115px;
+    }
+}
+@media screen and (min-width:768px){
+    .buss-container{
+        max-width: 768px;
+        padding: 0 35px 0 39px;
+        margin-top: 52px;
+    }
+    .bussines{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 78px;
+    }
+    .about-768{
+        display: block;
+        text-align: left;
+        font-weight: 600;
+        font-size: 30px;    
+    }
+    .about{
+        display: none;
+    }
+    .promo-line{
+        width: 321px;
+        font-weight: 400;
+font-size: 14px;
+text-align: left;
+margin-top: 10px;
+    }
+    .all-users{
+        padding: 0;
+        gap: 46px;
+    }
+    .buss-svg{
+        width: 295px;
+        height: 295px;
+        margin: 0;
+    }
+    .count{
+        font-weight: 400;
+font-size: 13px;
+    }
+    .container{
+        max-width: 768px;
+        padding-left: 39px;
+        padding-right: 39px;
+        padding-top: 39px;
+    }
+    .hero-container{
+        display: flex;
+        gap: 20px;
+        flex-direction: row-reverse;
+        max-width: 768px;
+        padding-left: 39px;
+        padding-right: 17px;
+    }
+    .lenpic{
+        width: 352px;
+        height: 352px;
+        margin: 0 0 36px;
+    }
+    .learnb{
+        margin-top: 28px;
+        font-weight: 600;
+        font-size: 36px;
+        width: 217px;
+        height: 135px;
+        line-height: 1.2;
+        text-align: left;
+    }
+    .learnb span{
+        display: block;
+    }
+    .learnb::after{
+        position: absolute;
+        display: block;
+        width: 90px;
+        height: 90px;
+        transform: translate(240%, -100%);
+    }
+    .promo{
+        margin-top: 25px; 
+        margin-bottom: 0;
+        width: 338px;
+        margin-left: 0;
+        text-align: left;
+    }
+    .strtbtn{
+        width: 236px;
+        margin: 0;
+        font-weight: 400;
+        padding: 19px 67px;
+        margin-top: 32px;
+    }
+    .info-container{
+        max-width: 768px;
+        padding: 0 39px 0 31px;
+    }
+    .skill-lst{
+        display: grid;
+        grid-template-columns:2fr 1fr 1fr ;
+        gap: 10px;
+
+    }
+    .write{
+        height: 662px;
+        grid-column-start:1 ;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .hear{
+        width: 202px;
+        height: 134px;
+    }
+    .speak{
+
+        height: 441px;
+        width: 227px;
+    }
+    .skill-btn{
+        margin: 0;
+        padding: 14px 42px;
+        margin-bottom: 37px;
+        
+    }
+    .promo-speak{
+        font-weight: 400;
+        font-size: 13px;
+        margin-bottom: 0;
+        margin-left:0 ;
+    
+    }
+    .promo-write{
+        line-height: 1.8;
+        font-weight: 400;
+        font-size: 13px;
+        margin-bottom: 13px;
+    }
+    .promo-listen{
+        width: 250px;
+        margin-left:5px ;
+        height: 69px;
+    }
+    .wrt-btn{
+        margin-top: 60px;
+    }
+    .bro{
+        width: 200px;
+        height: 200px;
+    }
+    .listen{
+        margin-top: 0;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 462px;
+        height: 210px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .speak-title{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .btn{
+        top: 53px;
+        right: 39px;
+    }
+    .burger{
+        width: 30px;
+        height: 17px;
+    }
+    .modal {
+        width: 429px;
+        padding-top: 39px;
+        padding-right: 39px;
+        padding-left: 26px;
+    }
+    .modal-nav-menu{
+        margin-bottom: 80px;
+    }
+    .modal-btn{
+        right: 87px;
+        top: 40px
+    }
+    .skill-btn{
+        margin-left: 17px;
+    }
+    .speak-title{
+        margin-left: 13px;
+    }
+    .listen-title{
+        margin-left: 3px;
+    }
+    .btn-listn{
+        margin-left: 3px;
+    }
+}
+@media screen and (min-width:992px){
+    .buss-container{
+        max-width: 992px;
+        padding: 0 31px 0 22px;
+        margin-top: 106px;
+    }
+    .bussines{
+        gap: 57px;
+    }
+    .about-768{
+        font-weight: 600;
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+    .promo-line{
+        font-weight: 400;
+font-size: 16px;
+width: 546px;
+margin-top: 35px;
+    }
+    .buss-svg{
+        width: 336px;
+        height: 336px;
+    }
+    .all-users{
+        gap: 62px;
+        margin-top:30px ;
+    }
+    .container{
+        max-width: 992px;
+        padding-left: 31px;
+        padding-right: 31px;
+        padding-top: 25px;
+    }
+    .hero-container{
+        gap: 57px;
+        max-width: 992px;
+        padding-top: 76px;
+        padding-left: 30px;
+        padding-right:20px ;
+    }
+    .lenpic{
+        width: 460px;
+        height: 460px;
+        margin: 0;
+    }
+    .learnb{
+        font-weight: 600;
+        font-size: 48px;
+        width: 290px;
+        height: 192px;
+    }
+    .learnb::after{
+        transform: translate(320%, -100%);
+    }
+    .promo{
+        width: 421px;
+        font-size: 20px;
+    }
+    .strtbtn{
+        width: 292px;
+        height: 80px;
+        font-size: 24px;
+        padding: 27px 78px;
+        margin-top: 55px;
+    }
+    .btn{
+        display: none;
+    }
+    .nav{
+        display: flex;
+    }
+    .info-container{
+        max-width: 992px;
+        padding: 0 26px 0 32px;
+    }
+    .skill-lst{
+        gap: 13px;
+    }
+    .write{
+        width: 303px;
+        height: 696px;
+    }
+    .speak-title{
+        font-weight: 600;
+        font-size: 22px;
+        margin-left: 28px;
+    }
+    .promo-write{
+        width: 262px;
+        font-weight: 400;
+font-size: 14px;
+margin-left:28px ;
+    }
+    .speak{
+        width: 302px;
+        height: 441px;
+    }
+    .listen{
+        width: 616px;
+        height: 241px;
+    }
+    .skill-btn{
+        padding: 17px 42px 19px 41px;
+        font-weight: 500;
+        font-size: 18px;
+        margin-left:28px ;
+        margin-bottom: 15px;
+    }
+    .speak-title{
+        margin-left: 28px;
+    }
+    .listen-title{
+        font-weight: 600;
+        font-size: 22px;
+        margin-left: 28px;
+    }
+    .btn-listn{
+        margin-left: 28px;
+    }
+    .bro{
+        width: 260px;
+    }
+    .hear{
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .buss-container{
+        max-width: 1600px;
+        padding: 0 130px;
+        margin-top: 180px;
+    }
+    .bussines{
+        gap: 137px;
+    }
+    .about-768{
+        font-weight: 600;
+        font-size: 48px;
+    }
+    .promo-line{
+        font-weight: 400;
+font-size: 20px;
+width: 652px;
+margin-top:30px ;
+    }
+    .buss-svg{
+        width: 540px;
+        height: 540px;
+    }
+    .all-users{
+        margin-top: 30px;
+        gap: 142px;
+        padding-left: 50px;
+    }
+    .count{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .count span{
+        font-weight: 600;
+font-size: 48px;
+    }
+    .container{
+        max-width: 1600px;
+        padding-right: 131px;
+        padding-left: 131px;
+        padding-top: 55px;
+    }
+    .hero-container{
+        max-width: 1600px;
+        padding: 0 131px;
+        margin-top: 63px;
+        gap: 145px;
+    }
+    .lenpic{
+        width: 654px;
+        height: 510px;
+    }
+    .learnb{
+        font-size: 64px;
+        width: 386px;
+        height: 240px;
+        margin: 0;
+    }
+    .learnb::after{
+
+        transform: translate(450%,-130%);
+    }
+    .promo{
+        width: 540px;
+        height: 108px;
+        font-size: 24px;
+    }
+    .strtbtn{
+        width: 426px;
+        height: 100px;
+        font-size: 36px;
+        padding: 23px 102px;
+    }
+    .nav-menu {
+        gap: 50px;
+        margin-left: 236px;
+        margin-right: 121px;
+    }
+    .logo{
+        font-size: 36px;
+    }
+    .nav-link{
+        font-size: 20px;
+    }
+    .lets{
+        display: block;
+        width: 312px;
+        height: 70px;
+        padding: 20px 56px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .info-container{
+        max-width: 1600px;
+        padding: 0 131px;
+    }
+    .skill-lst{
+        gap: 30px;
+    }
+    .write{
+        width: 426px;
+        height: 947px;
+    }
+    .speak-title{
+        width: 144px;
+        height: 45px;
+        margin-left: 18px;
+        margin-top: 24px;
+    }
+    .promo-write{
+        line-height: 1.8;
+        font-weight: 400;
+font-size: 16px;
+width: 354px;
+margin-left: 18px;
+margin-top: 20px;
+    }
+    .skill-btn{
+        padding: 16px 43px;
+        font-weight: 500;
+        font-size: 18px;
+        margin-left: 18px;
+        margin-top: 30px;
+    }
+    .wrt-btn{
+        margin-top: 60px;
+    }
+    .speak{
+        width: 426px;
+height: 579px;
+    }
+    .listen{
+        width: 882px;
+height: 338px;
+    }
+    .bro{
+        width: 390px;
+        height: 260px;
+    }
+
+}
