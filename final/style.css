@@ -13,7 +13,12 @@ body{
     font-family: 'Poppins';
     display: block;
 }
-
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
 .nav{
     display: none;
 }
@@ -324,6 +329,7 @@ color: #2A3246;
 .price-container{
     max-width: 320px;
     padding: 0 19px;
+    margin: 84px auto 0;
 }
 .price-title{
     width: 85px;
@@ -340,20 +346,175 @@ color: #2A3246;
     margin: 0 auto;
     width: 248px;
     height: 248px;
+    margin-bottom: 28px;
 }
 .price-disc{
     font-weight: 600;
     font-size: 18px;
     color: #263238;
-    margin-top: 28px;
 }
 .price-promo{
     font-size: 13px;
 line-height: 20px;
 color: #8F95A5;
-margin-top: 17px;
+margin: 17px auto 0;
+}
+.price-btn{
+    margin: 33px auto 0;
+    display: block;
+    width: 170px;
+    background: #EEEEEE;
+border-radius: 5px;
+color: #546269;
+padding: 7px 15px 9px 12px;
+font-weight: 400;
+font-size: 14px;
+border: none;
+
+
+}
+.price-element{
+    margin: 0 auto;
+}
+.price-btn span{
+    font-weight: 400;
+font-size: 18px;
+color: #263238;
+margin-right: 12px;
+}
+.lesson-svg{
+    display: block;
+    margin-bottom: 17px;
+    width: 257px;
+    height: 197px;
+    margin: 0 auto 12px;
+}
+.lesson-promo{
+    margin-top: 17px;
+}
+.web-svg{
+    display: block;
+    width: 241px;
+    height: 241px;
+    margin: 0 auto 7px;
+}
+.web-promo{
+    margin-top: 30px;
+}
+.price-element + .price-element{
+    margin-top: 70px;
+}
+.footer-container{
+    max-width: 320px;
+    padding:0 11px 48px 15px ;
+    margin: 0 auto;
+
+}
+.footer-container::before{
+    display: block;
+    content: " ";
+    height: 1px;
+    background-color: #939393;
+    
+}
+.footer-logo{
+    display: block;
+    width: 71px;
+    margin: 25px auto 15px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+
+}
+.footer-logo span{
+    color: #939393;
+}
+.footer-lst{
+    display: flex;
+    gap: 10px;
+}
+.footer-element{
+    color: #8F95A5;
+    font-weight: 500;
+    font-size: 11px;
+}
+.element-with{
+    position: relative;
+}
+.element-with::before{
+    display: block;
+    content: " ";
+    width: 5px;
+    height: 5px;
+    background-color: #939393;
+    position: absolute;
+    transform: translate(-130%,120%);
+    border-radius: 5px;
+}
+.contact{
+    margin: 72px 0 55px;
+}
+.contct-container {
+    max-width: 320px;
+    padding: 0 14px 0 15px;
+    margin: 0 auto ;
+    text-align: center;
+}
+.conact-title{
+    display: block;
+    width: 135px;
+    font-weight: 600;
+font-size: 24px;
+margin: 0 auto;
+
+}
+.contact-svg {
+    display: block;
+    width: 253px;
+    height: 228px;
+    margin: 38px auto ;
+}
+.content-promo {
+    display: block;
+    width: 287px;
+    padding: 0 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8F95A5;
+    margin: 0 auto 31px;
+}
+.contact-email {
+    width: 291px;
+    height: 50px;
+    border: 1px solid #8F95A5;
+    border-radius: 5px;
+    padding: 16px 162px 16px 26px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 17px;
+}
+.contact-btn {
+    width: 290px;
+    height: 60px;
+    background: #263238;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+
 }
 @media screen and (min-width:575px){
+    .element-with::before{
+        display: block;
+        content: " ";
+        width: 5px;
+        height: 5px;
+        background-color: #939393;
+        position: absolute;
+        transform: translate(-130%,110%);
+        border-radius: 5px;
+    }
     .buss-container{
         margin-top: 84px;
         max-width: 575px;
@@ -466,8 +627,91 @@ font-size: 14px;
         font-size: 22px;
         padding: 18px 114px 18px 115px;
     }
+    .price-container{
+        max-width: 575px;
+        padding: 0 22px 0 38px;
+        margin-top: 130px;
+    }
+    .price-title{
+        font-weight: 600;
+font-size: 30px;
+margin-bottom: 54px;
+    }
+    .price-svg{
+        width: 291px;
+        height: 291px;
+        margin-bottom: 29px;
+    }
+    .lesson-svg{
+        width: 314px;
+        height: 241px;
+        margin-bottom: 21px;
+    }
+    .web-svg{
+        width: 253px;
+height: 253px;
+margin-bottom: 15px;
+    }
+    .price-disc{
+        font-weight: 600;
+font-size: 24px;
+    }
+    .price-promo{
+        font-weight: 400;
+font-size: 14px;
+width: 394px;
+margin-top: 23px;
+    }
+    .price-btn{
+        width: 205px;
+        padding: 10px 23px 11px 12px;
+        font-weight: 400;
+font-size: 16px;
+margin-top: 31px;
+    }
+    .price-btn span{
+        font-weight: 400;
+font-size: 22px;
+    }
+    .lesson-promo{
+        width: 329px;
+    }
+    .footer-container{
+        max-width: 575px;
+        padding: 30px 26px 32px;
+    }
+    .footer-disc{
+        margin-top: 24px;
+        display: flex;
+        gap: 104px;
+        align-items: center;
+    }
+    .footer-logo{
+        font-weight: 400;
+        font-size: 30px;
+        margin: 0;
+        width: 89px;
+    }
+    .footer-element{
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .footer-container::before{
+        display: block;
+        height: 2px;
+    }
 }
 @media screen and (min-width:768px){
+    .element-with::before{
+        display: block;
+        content: " ";
+        width: 5px;
+        height: 5px;
+        background-color: #939393;
+        position: absolute;
+        transform: translate(-130%,140%);
+        border-radius: 5px;
+    }
     .buss-container{
         max-width: 768px;
         padding: 0 35px 0 39px;
@@ -664,8 +908,102 @@ font-size: 13px;
     .btn-listn{
         margin-left: 3px;
     }
+    .price-container{
+        max-width: 768px;
+        padding: 0 38px 0 25px;
+        margin-top: 90px;
+    }
+    .price-lst{
+        align-items: last baseline;
+        display: flex;
+    }
+    .price-svg{
+        margin-left: 0;
+        width: 197px;
+        height: 197px;
+        margin-bottom: 23px;
+    }
+    .lesson-svg{
+        margin-left: 0;
+        width: 219px;
+        height: 168px;
+        margin-bottom: 23px;
+    }
+    .web-svg{
+        margin-left: 0;
+        width: 210px;
+        height: 210px;
+        margin-bottom: 15px;
+    }
+    .price-disc{
+        text-align: left;
+        width: 174px;
+        height: 56px;
+    }
+    .price-title{
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 26px;
+    }
+    .price-promo{
+        margin-left: 0;
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        width: 194px;
+        margin-top: 40px ;
+    }
+    .lesson-promo{
+        width: 209px;
+    }
+    .web-promo{
+        width: 227px;
+    }
+    .price-element + .price-element{
+        margin-top: 0;
+    }
+    .price-btn{
+        margin-left:0 ;
+        font-weight: 400;
+font-size: 16px;
+margin-top: 23px;
+    }
+    .les-btn{
+        margin-top: 44px;
+    }
+    .btn-web{
+        margin-top: 49px;
+    }
+    .les-disc{
+        margin-top: 23px;
+    }
+    .footer-container{
+        max-width: 768px;
+        padding: 0 39px 15px;
+    }
+    .footer-logo{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .footer-element{
+        font-weight: 400;
+        font-size: 13px;
+    }
+    .footer-disc{
+        gap: 261px;
+    }
 }
 @media screen and (min-width:992px){
+    .element-with::before{
+        display: block;
+        content: " ";
+        width: 5px;
+        height: 5px;
+        background-color: #939393;
+        position: absolute;
+        transform: translate(-130%,180%);
+        border-radius: 5px;
+    }
     .buss-container{
         max-width: 992px;
         padding: 0 31px 0 22px;
@@ -790,6 +1128,80 @@ margin-left:28px ;
     }
     .hear{
         margin: auto;
+    }
+    .price-container{
+        max-width: 992px;
+        padding: 0 25px 0 32px;
+        margin-top: 125px;
+    }
+    .price-lst{
+        gap: 0;
+    }
+    .price-svg{
+        width: 222px;
+        height: 222px;
+        margin-bottom: 20px;
+    }
+    .lesson-svg{
+        width: 267px;
+        height: 195px;
+        margin-bottom: 15px;
+    }
+    .web-svg{
+        width: 242px;
+        height: 242px;
+        margin-bottom: 5px;
+    }
+    .price-title{
+        font-weight: 600;
+        font-size: 36px;
+    }
+    .price-disc{
+        font-weight: 600;
+        font-size: 22px;
+        width: 274px;
+    }
+    .price-promo{
+        font-weight: 400;
+font-size: 16px;
+width: 293px;
+margin-top: 14px;
+    }
+    .web-promo{
+        width: 273px;
+    }
+    .price-btn{
+        width: 205px;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 31px;
+        
+    }
+    .price-btn span{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .les-btn{
+        margin-top: 52px;
+    }
+    .btn-web{
+        margin-top: 34px;
+    }
+    .footer-container{
+        max-width: 992px;
+        padding: 0 31px 26px 32px;
+    }
+    .footer-logo{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .footer-element{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .footer-disc{
+        margin-top: 22px;
+        gap: 422px;
     }
 }
 
@@ -932,5 +1344,87 @@ height: 338px;
         width: 390px;
         height: 260px;
     }
+    .price-container{
+        max-width: 1600px;
+        padding: 0 131px;
+        margin-top: 180px;
+    }
+    .price-svg{
+        width: 426px;
+        height: 320px;
+        margin-bottom: 31px;
+    }
+    .lesson-svg{
+        width: 426px;
+        height: 320px;
+        margin-bottom: 31px;
+    }
+    .web-svg{
+        width: 426px;
+        height: 320px;
+        margin-bottom: 31px;
+    }
+    .price-title{
+        font-weight: 600;
+        font-size: 48px;
+        margin-bottom: 60px;
+    }
+    .price-lst{
+        gap: 30px;
+    }
+    .price-disc{
+        font-weight: 600;
+        font-size: 30px;
+        width: 383px;
+    }
+    .price-promo{
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 20px;
+        width: 420px;
+        line-height: 1.8;
+    }
+    .web-promo{
+        width: 426px;
+    }
+    .price-btn{
+        width: 260px;
+        font-weight: 400;
+        font-size: 18px;
+        padding: 5px 23px 7px;
+        margin-top: 30px;
+    }
+    .price-btn span{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .les-btn{
+        margin-top: 57px;
+    }
+    .btn-web{
+        margin-top: 60px;
+    }  
+    .footer-container{
+        max-width: 1600px;
+        padding: 0 131px 55px;
+    }
+    .footer-logo{
+        font-weight: 400;
+        font-size: 36px;
+    }
+    .footer-element{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .footer-disc{
+        gap: 463px;
+    }
+    .footer-lst{
+        gap: 80px;
+    }
+    .element-with::before{
+        display: none;
+    }
+
 
 }
