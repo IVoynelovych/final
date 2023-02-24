@@ -13,7 +13,12 @@ body{
     font-family: 'Poppins';
     display: block;
 }
-
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
 .nav{
     display: none;
 }
@@ -32,6 +37,12 @@ body{
 }
 .logo span{
     color: #939393;
+}
+.about-768{
+    display: none;
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .btn{
@@ -82,6 +93,18 @@ body{
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  .vis{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+  }
   .modal{
     position: relative;
     background-color: #ffffff;
@@ -90,6 +113,10 @@ body{
     padding-top: 25px;
     padding-right: 7px;
     padding-left: 15px;
+    overflow: scroll;
+  }
+  .no-scroll{
+    position: fixed;
   }
   .modal-back{
     position: fixed;
@@ -98,15 +125,16 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
+    overflow: scroll;
   }
 .modal-logo {
     display: block;
     color: #939393;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #C4C4C4;
+    width: 70px;
     font-weight: 400;
     font-size: 24px;
     line-height: 1.5;
+    margin-bottom: 46px;
 }
 .modal-btn {
     position: absolute;
@@ -117,7 +145,6 @@ body{
 }
 .modal-nav-menu {
     margin-bottom: 69px;
-    margin-top: 46px;
 }
 .modal-nav-link {
     font-weight: 500;
@@ -125,8 +152,18 @@ body{
     line-height: 2.95;
     color: #263238;
 }
+.modal-nav::before{
+    display: block;
+    content: " ";
+    background-color: #939393;
+    height: 1px;
+
+}
 .cross{
     display: block;
+}
+.all-users{
+    margin-top: 30px;
 }
 
 .modal-lets {
@@ -193,6 +230,7 @@ color: #8F95A5;
     fill: #000000;
 }
 .strtbtn {
+    border: none;
     font-weight: 500;
     font-size: 16px;
     padding: 18px 99px;
@@ -201,7 +239,358 @@ color: #8F95A5;
     border-radius: 5px;
     margin: 0 4px 0 10px;
 }
+/*info*/
+.skill{
+    margin-top: 53px ;
+    margin-bottom: 50px;
+}
+.info-container {
+    max-width: 320px;
+    padding:0 15px ;
+    margin: 0 auto 0;
+}
+.skill-element{
+    position: relative;
+    width: 290px;
+    margin-top:21px ;
+    background-color: #F5F5F5;
+}
+.bro {
+    fill: #263238;
+    display: block;
+    width: 213px;
+    height: 213px;
+    margin: 0 auto;
+}
+.type-svg{
+    width: 204px;
+    height: 204px;
+}
+.reading-svg{
+    width: 237px;
+    height: 157px;
+}
+.hear{
+    width: 232px;
+    height: 154px;
+}
+.speak-title {
+    font-weight: 600;
+font-size: 18px;
+margin-left: 13px;
+}
+
+.speak-btn {
+    position: absolute;
+    padding: 14px 43px;
+    border: none;
+    background-color: #263238;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+margin-left: 16px;
+margin-bottom:45px ;
+}
+.skill-btn{
+    padding: 14px 43px;
+    border: none;
+    background-color: #263238;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+margin-left: 16px;
+margin-bottom:44px ;
+border-radius: 5px;
+}
+.skil{
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+font-size: 24px;
+width: 62px;
+height: 80px;
+}
+.promo-write{
+    font-weight: 400;
+font-size: 12px;
+color: #8F95A5;
+margin-bottom:30px ;
+margin-left: 16px;
+}
+.promo-type{
+    font-weight: 400;
+font-size: 13px;
+color: #8F95A5;
+margin-bottom:30px ;
+margin-left: 16px;
+}
+.about-us{
+    margin-bottom: 84px;
+}
+.buss-container{
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 9px;
+    margin: 0 auto;
+    text-align: center;
+}
+.buss-svg{
+    margin-top: 24px;
+    width: 283px;
+    height: 283px;
+}
+.about{
+    margin: 0;
+    font-weight: 600;
+font-size: 24px;
+}
+.promo-line{
+    font-weight: 400;
+font-size: 13px;
+color: #8F95A5;
+margin-top: 23px;
+}
+.count + .count{
+    margin-top: 23px;
+}
+.count{
+    font-weight: 400;
+font-size: 15px;
+color: #8F95A5;
+
+}
+.count span{
+    display: block;
+    font-weight: 600;
+font-size: 24px;
+color: #2A3246;
+}
+.price-container{
+    max-width: 320px;
+    padding: 0 19px;
+    margin: 84px auto 0;
+}
+.price-title{
+    width: 85px;
+    height: 80px;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 auto 49px;
+}
+.price-lst{
+    text-align: center;
+}
+.price-svg{
+    display: block;
+    margin: 0 auto;
+    width: 248px;
+    height: 248px;
+    margin-bottom: 28px;
+}
+.price-disc{
+    font-weight: 600;
+    font-size: 18px;
+    color: #263238;
+}
+.price-promo{
+    font-size: 13px;
+line-height: 20px;
+color: #8F95A5;
+margin: 17px auto 0;
+}
+.price-btn{
+    margin: 33px auto 0;
+    display: block;
+    width: 170px;
+    background: #EEEEEE;
+border-radius: 5px;
+color: #546269;
+padding: 7px 15px 9px 12px;
+font-weight: 400;
+font-size: 14px;
+border: none;
+
+
+}
+.price-element{
+    margin: 0 auto;
+}
+.price-btn span{
+    font-weight: 400;
+font-size: 18px;
+color: #263238;
+margin-right: 12px;
+}
+.lesson-svg{
+    display: block;
+    margin-bottom: 17px;
+    width: 257px;
+    height: 197px;
+    margin: 0 auto 12px;
+}
+.lesson-promo{
+    margin-top: 17px;
+}
+.web-svg{
+    display: block;
+    width: 241px;
+    height: 241px;
+    margin: 0 auto 7px;
+}
+.web-promo{
+    margin-top: 30px;
+}
+.price-element + .price-element{
+    margin-top: 70px;
+}
+.footer-container{
+    max-width: 320px;
+    padding:0 11px 48px 15px ;
+    margin: 0 auto;
+
+}
+.footer-container::before{
+    display: block;
+    content: " ";
+    height: 1px;
+    background-color: #939393;
+    
+}
+.footer-logo{
+    display: block;
+    width: 71px;
+    margin: 25px auto 15px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+
+}
+.footer-logo span{
+    color: #939393;
+}
+.footer-lst{
+    display: flex;
+    gap: 10px;
+}
+.footer-element{
+    color: #8F95A5;
+    font-weight: 500;
+    font-size: 11px;
+}
+.element-with{
+    position: relative;
+}
+.element-with::before{
+    display: block;
+    content: " ";
+    width: 5px;
+    height: 5px;
+    background-color: #939393;
+    position: absolute;
+    transform: translate(-130%,120%);
+    border-radius: 5px;
+}
+.contact{
+    margin: 72px 0 55px;
+}
+.contact-container {
+    max-width: 320px;
+    padding: 0 14px 0 15px;
+    margin: 0 auto ;
+    text-align: center;
+}
+.contact-title{
+    display: block;
+    width: 135px;
+    font-weight: 600;
+font-size: 24px;
+margin: 0 auto;
+
+}
+.title-768{
+    display: none;
+    width: 135px;
+    font-weight: 600;
+font-size: 24px;
+margin: 0 auto;
+}
+.contact-svg {
+    display: block;
+    width: 253px;
+    height: 228px;
+    margin: 38px auto ;
+}
+.content-promo {
+    display: block;
+    width: 287px;
+    padding: 0 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #8F95A5;
+    margin: 0 auto 31px;
+}
+.contact-email {
+    width: 291px;
+    height: 50px;
+    border: 1px solid #8F95A5;
+    border-radius: 5px;
+    padding: 16px 162px 16px 26px;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 17px;
+}
+.contact-btn {
+    width: 290px;
+    height: 60px;
+    background: #263238;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+
+}
 @media screen and (min-width:575px){
+    .element-with::before{
+        display: block;
+        content: " ";
+        width: 5px;
+        height: 5px;
+        background-color: #939393;
+        position: absolute;
+        transform: translate(-130%,110%);
+        border-radius: 5px;
+    }
+    .about-us{
+        margin-bottom: 130px;
+    }
+    .pict{
+        margin-left: 25px;
+    }
+    .buss-container{
+        margin-top: 84px;
+        max-width: 575px;
+        padding: 0 33px 0 32px;
+    }
+    .about{
+        font-weight: 600;
+font-size: 30px;
+    }
+    .buss-svg{
+        width: 352px;
+height: 352px;
+    }
+    .promo-line{
+        margin-top: 25px;
+        font-weight: 400;
+font-size: 14px;
+    }
+    .all-users{
+        display: flex;
+        gap: 75px;
+        padding-left: 53px;
+        align-items: baseline;
+    }
     .container{
         max-width: 575px;
         padding-left: 32px;
@@ -212,6 +601,40 @@ color: #8F95A5;
         max-width: 575px;
         padding-left: 42px;
         padding-right: 42px;  
+    }
+    .skill-element{
+        width: 240px;
+    }
+    
+    .skill-lst{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .skill-btn{
+        margin-top: 134px;
+        margin-bottom: 36px;
+        padding: 14px 56px;
+    }
+    .bro{
+        width: 185px;
+        height: 185px;
+    }
+    .type-svg{
+        width: 182px;
+        height: 182px;
+    }
+    .reading-svg{
+        width: 198px;
+        height: 132px;
+    }
+    .hear{
+        width: 206px;
+        height: 137px;
+    }
+    .speak-btn{
+        margin-bottom: 36px;
+        padding: 14px 56px;
     }
     .lenpic{
         width: 424px;
@@ -235,6 +658,14 @@ color: #8F95A5;
         margin: 0 93px;
         margin-top: 37px;
         width: 305px;
+    }
+    .skill{
+        margin-top: 96px ;
+        margin-bottom: 84px;
+    }
+    .info-container{
+        max-width: 575px;
+        padding: 0 32px;
     }
     .btn{
         top: 50px;
@@ -269,13 +700,192 @@ color: #8F95A5;
         font-size: 22px;
         padding: 18px 114px 18px 115px;
     }
+    .price-container{
+        max-width: 575px;
+        padding: 0 22px 0 38px;
+        margin-top: 130px;
+    }
+    .price-title{
+        font-weight: 600;
+font-size: 30px;
+margin-bottom: 54px;
+    }
+    .price-svg{
+        width: 291px;
+        height: 291px;
+        margin-bottom: 29px;
+    }
+    .lesson-svg{
+        width: 314px;
+        height: 241px;
+        margin-bottom: 21px;
+    }
+    .web-svg{
+        width: 253px;
+height: 253px;
+margin-bottom: 15px;
+    }
+    .price-disc{
+        font-weight: 600;
+font-size: 24px;
+    }
+    .price-promo{
+        font-weight: 400;
+font-size: 14px;
+width: 394px;
+margin-top: 23px;
+    }
+    .price-btn{
+        width: 205px;
+        padding: 10px 23px 11px 12px;
+        font-weight: 400;
+font-size: 16px;
+margin-top: 31px;
+    }
+    .price-btn span{
+        font-weight: 400;
+font-size: 22px;
+    }
+    .lesson-promo{
+        width: 329px;
+    }
+    .footer-container{
+        max-width: 575px;
+        padding: 30px 26px 32px;
+    }
+    .footer-disc{
+        margin-top: 24px;
+        display: flex;
+        gap: 104px;
+        align-items: center;
+    }
+    .footer-logo{
+        font-weight: 400;
+        font-size: 30px;
+        margin: 0;
+        width: 89px;
+    }
+    .footer-element{
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .footer-container::before{
+        display: block;
+        height: 2px;
+    }
+    .contact{
+        margin: 163px 0 144px;
+    }
+    .contact-container{
+        max-width: 575px;
+        padding: 0 30px 0 33px;
+    }
+    .contact-title{
+        font-weight: 600;
+        font-size: 30px;
+        width: 169px;
+    }
+    .contact-svg{
+        width: 358px;
+        height: 322px;
+        margin-top: 83px;
+        margin-bottom: 34px;
+    }
+    .content-promo{
+        font-weight: 400;
+        font-size: 16px;
+        width: 473px;
+        margin-bottom: 60px;
+    }
+    .contact-lst{
+        margin: 0 auto;
+        display:   flex;
+    }
+    .contact-email{
+        width: 305px;
+        height: 60px;
+        padding: 20px 32px;
+        margin: 0;
+    }
+    .contact-btn{
+        width: 193px;
+        height: 60px;
+        padding: 21px 56px 15px;
+    }
+    .count{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .count span{
+        font-weight: 600;
+        font-size: 24px;
+    }
 }
 @media screen and (min-width:768px){
+    .element-with::before{
+        display: block;
+        content: " ";
+        width: 5px;
+        height: 5px;
+        background-color: #939393;
+        position: absolute;
+        transform: translate(-130%,140%);
+        border-radius: 5px;
+    }
+    .about-us{
+        margin-bottom: 93px;
+    }
+    .buss-container{
+        max-width: 768px;
+        padding: 0 35px 0 39px;
+    }
+    .bussines{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 78px;
+    }
+    .about-768{
+        display: block;
+        text-align: left;
+        font-weight: 600;
+        font-size: 30px;    
+    }
+    .about{
+        display: none;
+    }
+    .promo-line{
+        width: 321px;
+        font-weight: 400;
+font-size: 14px;
+text-align: left;
+margin-top: 10px;
+    }
+    .all-users{
+        padding: 0;
+        gap: 46px;
+    }
+    .buss-svg{
+        width: 295px;
+        height: 295px;
+        margin: 0;
+    }
+    .count{
+        font-weight: 400;
+        font-size: 13px;
+    }
+    .count span{
+        font-weight: 600;
+        font-size: 22px;
+    }
     .container{
         max-width: 768px;
         padding-left: 39px;
         padding-right: 39px;
         padding-top: 39px;
+    }
+    .pict{
+        margin: 0;
     }
     .hero-container{
         display: flex;
@@ -323,6 +933,118 @@ color: #8F95A5;
         padding: 19px 67px;
         margin-top: 32px;
     }
+    .skill{
+        margin-top: 56px ;
+        margin-bottom: 52px;
+    }
+    .info-container{
+        max-width: 768px;
+        padding: 0 39px 0 31px;
+    }
+    .skill-lst{
+        display: grid;
+        grid-template-columns:2fr 1fr 1fr ;
+        gap: 10px;
+
+    }
+    .write{
+        height: 662px;
+        grid-column-start:1 ;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .hear{
+        width: 202px;
+        height: 134px;
+    }
+    .speak{
+
+        height: 441px;
+        width: 227px;
+    }
+    .skill-btn{
+        margin: 0;
+        padding: 14px 42px;
+        margin-bottom: 37px;
+        
+    }
+
+    .promo-write{
+        line-height: 1.6;
+        font-weight: 400;
+        margin-bottom: 13px;
+        font-weight: 400;
+        font-size: 13px;
+        width: 188px;
+    
+    }
+    .write-title{
+        margin-top: 0;
+    }
+    
+    .promo-write + .promo-write{
+        margin-top: 28px;
+        margin-bottom: 0;
+    }
+    .write-title{
+        margin-top:0 ;
+        margin-bottom: 24px;
+    }
+    .read-title{
+        margin-top: 34px;
+        margin-bottom: 24px;
+    }
+    .spk-title{
+        margin-top: 34px;
+        margin-bottom: 15px;
+    }
+    .listen-title{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .promo-listen{
+        width: 250px;
+        margin-left:5px ;
+        height: 69px;
+    }
+    .wrt-btn{
+        margin-top: 34px;
+    }
+    .bro{
+        width: 214px;
+        height: 214px;
+    }
+    .type-svg{
+        width: 200px;
+        height: 200px;
+        margin-top: 14px;
+    }
+    .reading-svg{
+        width: 216px;
+        height: 144px;
+        margin-top: 34px;
+    }
+    .hear{
+        width: 202px;
+        height: 134px;
+        margin-top: 59px;
+        
+    }
+    .listen{
+        margin-top: 0;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 462px;
+        height: 210px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .speak-title{
+        font-weight: 600;
+        font-size: 20px;
+    }
     .btn{
         top: 53px;
         right: 39px;
@@ -344,13 +1066,206 @@ color: #8F95A5;
         right: 87px;
         top: 40px
     }
+    .skill-btn{
+        margin-left: 17px;
+    }
+    .speak-title{
+        margin-left: 13px;
+    }
+    .listen-title{
+        margin-left: 3px;
+    }
+    .btn-listn{
+        margin-left: 3px;
+    }
+    .price-container{
+        max-width: 768px;
+        padding: 0 38px 0 25px;
+        margin-top: 90px;
+    }
+    .price-lst{
+        align-items: last baseline;
+        display: flex;
+    }
+    .price-svg{
+        margin-left: 0;
+        width: 197px;
+        height: 197px;
+        margin-bottom: 23px;
+    }
+    .lesson-svg{
+        margin-left: 0;
+        width: 219px;
+        height: 168px;
+        margin-bottom: 23px;
+    }
+    .web-svg{
+        margin-left: 0;
+        width: 210px;
+        height: 210px;
+        margin-bottom: 15px;
+    }
+    .price-disc{
+        text-align: left;
+        width: 174px;
+        height: 56px;
+    }
+    .price-title{
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 26px;
+    }
+    .price-promo{
+        margin-left: 0;
+        text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        width: 194px;
+        margin-top: 40px ;
+    }
+    .lesson-promo{
+        width: 209px;
+    }
+    .web-promo{
+        width: 227px;
+    }
+    .price-element + .price-element{
+        margin-top: 0;
+    }
+    .price-btn{
+        margin-left:0 ;
+        font-weight: 400;
+font-size: 16px;
+margin-top: 23px;
+    }
+    .les-btn{
+        margin-top: 44px;
+    }
+    .btn-web{
+        margin-top: 49px;
+    }
+    .les-disc{
+        margin-top: 23px;
+    }
+    .footer-container{
+        max-width: 768px;
+        padding: 0 39px 15px;
+    }
+    .footer-logo{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .footer-element{
+        font-weight: 400;
+        font-size: 13px;
+    }
+    .footer-disc{
+        gap: 261px;
+    }
+    .contact{
+        margin-top: 65px;
+        margin-bottom: 141px;
+    }
+    .contact-container{
+        max-width: 768px;
+        padding: 0 26px;
+        display: flex;
+        align-items: center;
+        gap: 38px;
+    }
+    .contact-title{
+        display: none;
+    }
+    .title-768{
+        display: block;
+        font-weight: 600;
+        font-size: 30px;
+        width: 169px;
+        margin-left: 0;
+    }
+    .contact-svg{
+        width: 233px;
+        height: 210px;
+    }
+    .content-promo{
+        font-weight: 400;
+        font-size: 14px;
+        text-align: left;
+        margin-left: 0;
+        width: 392px;
+        margin-bottom:26PX ;
+    }
+    .contact-email{
+        width: 283px;
+        height: 50px;
+        font-weight: 400;
+        font-size: 12px;
+        padding: 16px 24px;
+    }
+    .contact-lst{
+        gap: 6px;
+    }
+    .contact-btn{
+        width: 145px;
+        height: 50px;
+        font-weight: 500;
+        font-size: 13px;
+        padding: 15px 39px 15px 40px;
+    }
 }
 @media screen and (min-width:992px){
+    .element-with::before{
+        display: block;
+        content: " ";
+        width: 5px;
+        height: 5px;
+        background-color: #939393;
+        position: absolute;
+        transform: translate(-130%,180%);
+        border-radius: 5px;
+    }
+    .about-us{
+        margin-bottom: 125px;
+    }
+    .buss-container{
+        max-width: 992px;
+        padding: 0 31px 0 22px;
+    }
+    .bussines{
+        gap: 57px;
+    }
+    .about-768{
+        font-weight: 600;
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+    .promo-line{
+        font-weight: 400;
+font-size: 16px;
+width: 546px;
+margin-top: 35px;
+    }
+    .buss-svg{
+        width: 336px;
+        height: 336px;
+    }
+    .all-users{
+        gap: 62px;
+        margin-top:30px ;
+    }
     .container{
         max-width: 992px;
         padding-left: 31px;
         padding-right: 31px;
         padding-top: 25px;
+    }
+    .count{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .count span{
+        font-weight: 600;
+        font-size: 30px;
     }
     .hero-container{
         gap: 57px;
@@ -390,9 +1305,242 @@ color: #8F95A5;
     .nav{
         display: flex;
     }
+    .skill{
+        margin-top: 47px ;
+        margin-bottom: 106px;
+    }
+    .info-container{
+        max-width: 992px;
+        padding: 0 26px 0 32px;
+    }
+    .skill-lst{
+        gap: 13px;
+    }
+    .write{
+        width: 303px;
+        height: 696px;
+    }
+    .speak-title{
+        font-weight: 600;
+        font-size: 22px;
+        margin-left: 28px;
+    }
+    .speak{
+        width: 302px;
+        height: 441px;
+    }
+    .listen{
+        width: 616px;
+        height: 241px;
+    }
+    .skill-btn{
+        width: 196px;
+        padding: 17px 42px 19px 41px;
+        font-weight: 500;
+        font-size: 18px;
+        margin-left:28px ;
+        margin-bottom: 15px;
+    }
+    .speak-title{
+        margin-left: 28px;
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .promo-write{
+        margin-left: 28px;
+        width: 226px;
+        margin-bottom: 26px;
+    }
+    .write-title{
+        margin-bottom: 25px;
+    }
+    .read-title{
+        margin-top: 12px;
+        margin-bottom: 25px;
+    }
+    .promo-write + .promo-write{
+        margin-top: 32px;
+    }
+    .listen-title{
+        font-weight: 600;
+        font-size: 22px;
+        margin-left: 28px;
+    }
+    .btn-listn{
+        margin-left: 28px;
+    }
+    .bro{
+        width: 260px;
+        height: 260px;
+    }
+    .type-svg{
+        width: 205px;
+        height: 205px;
+    }
+    .reading-svg{
+        width: 243px;
+        height: 162px;
+    }
+    .hear{
+        width: 253px;
+        height: 169px;
+    }
+    .price-container{
+        max-width: 992px;
+        padding: 0 25px 0 32px;
+        margin-top: 125px;
+    }
+    .price-lst{
+        gap: 0;
+    }
+    .price-svg{
+        width: 222px;
+        height: 222px;
+        margin-bottom: 20px;
+    }
+    .lesson-svg{
+        width: 267px;
+        height: 195px;
+        margin-bottom: 15px;
+    }
+    .web-svg{
+        width: 242px;
+        height: 242px;
+        margin-bottom: 5px;
+    }
+    .price-title{
+        font-weight: 600;
+        font-size: 36px;
+    }
+    .price-disc{
+        font-weight: 600;
+        font-size: 22px;
+        width: 274px;
+    }
+    .price-promo{
+        font-weight: 400;
+font-size: 16px;
+width: 293px;
+margin-top: 14px;
+    }
+    .web-promo{
+        width: 273px;
+    }
+    .price-btn{
+        width: 205px;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 31px;
+        
+    }
+    .price-btn span{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .les-btn{
+        margin-top: 52px;
+    }
+    .btn-web{
+        margin-top: 34px;
+    }
+    .footer-container{
+        max-width: 992px;
+        padding: 0 31px 26px 32px;
+    }
+    .footer-logo{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    .footer-element{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .footer-disc{
+        margin-top: 22px;
+        gap: 422px;
+    }
+    .contact{
+        margin-top: 146px;
+        margin-bottom: 157px;
+    }
+    .contact-container{
+        max-width: 992px;
+        padding: 0 28px 0 16px;
+        gap: 104px;
+    }
+    .title-768{
+        width: 202px;
+        font-weight: 600;
+        font-size: 36px;
+    }
+    .content-promo{
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 34px;
+        width: 420px;
+    }
+    .contact-svg{
+        width: 312px;
+        height: 281px;
+    }
+    .contact-email{
+        width: 323px;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 23px 38px 16px;
+    }
+    .contact-btn{
+        width: 193px;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 21x 56px 15px;
+    }
+    .contact-lst{
+        gap: 14px;
+    }
 }
 
 @media screen and (min-width:1600px){
+    .about-us{
+        margin-bottom: 180px;
+    }
+    .buss-container{
+        max-width: 1600px;
+        padding: 0 130px;
+        margin-top: 180px;
+    }
+    .bussines{
+        gap: 137px;
+    }
+    .about-768{
+        font-weight: 600;
+        font-size: 48px;
+    }
+    .promo-line{
+        font-weight: 400;
+font-size: 20px;
+width: 652px;
+margin-top:30px ;
+    }
+    .buss-svg{
+        width: 540px;
+        height: 540px;
+    }
+    .all-users{
+        margin-top: 30px;
+        gap: 142px;
+        padding-left: 50px;
+    }
+    .count{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .count span{
+        font-weight: 600;
+font-size: 48px;
+    }
     .container{
         max-width: 1600px;
         padding-right: 131px;
@@ -449,4 +1597,210 @@ color: #8F95A5;
         border-radius: 10px;
         font-size: 20px;
     }
+    .skill{
+        margin-top: 180px ;
+        margin-bottom: 180px;
+    }
+    .info-container{
+        max-width: 1600px;
+        padding: 0 131px;
+    }
+    .skill-lst{
+        gap: 30px;
+    }
+    .write{
+        width: 426px;
+        height: 947px;
+    }
+    .speak-title{
+        width: 144px;
+        height: 45px;
+        margin-left: 18px;
+        margin-top: 24px;
+    }
+    .promo-write{
+        line-height: 1.8;
+        font-weight: 400;
+font-size: 16px;
+width: 354px;
+margin-left: 18px;
+margin-top: 20px;
+    }
+    .skill-btn{
+        width: 230px;
+        height: 60px;
+        padding: 16px 43px;
+        font-weight: 500;
+        font-size: 18px;
+        margin-left: 18px;
+        margin-top: 30px;
+    }
+    .speak{
+        width: 426px;
+height: 579px;
+    }
+    .listen{
+        width: 882px;
+height: 338px;
+    }
+    .bro{
+        width: 390px;
+        height: 390px;
+    }
+    .type-svg{
+        width: 390px;
+        height: 264px;
+    }
+    .reading-svg{
+        width: 390px;
+        height: 264px;
+    }
+    .hear{
+        width: 408px;
+        height: 274px;
+    }
+    .speak-title{
+        font-weight: 600;
+        font-size: 30px;
+        margin-top: 24px;
+        margin-bottom: 20px;
+    }
+    .promo-write{
+        font-weight: 400;
+        font-size: 16px;
+        width: 340px;
+    }
+    .read-title{
+        margin-top: 0;
+    }
+    .price-container{
+        max-width: 1600px;
+        padding: 0 131px;
+        margin-top: 180px;
+    }
+    .promo-read{
+        width: 354px;
+    }
+    .promo-speak{
+        width: 354px;
+    }
+    .price-svg{
+        width: 426px;
+        height: 320px;
+        margin-bottom: 31px;
+    }
+    .lesson-svg{
+        width: 426px;
+        height: 320px;
+        margin-bottom: 31px;
+    }
+    .web-svg{
+        width: 426px;
+        height: 320px;
+        margin-bottom: 31px;
+    }
+    .price-title{
+        font-weight: 600;
+        font-size: 48px;
+        margin-bottom: 60px;
+    }
+    .price-lst{
+        gap: 30px;
+    }
+    .price-disc{
+        font-weight: 600;
+        font-size: 30px;
+        width: 383px;
+    }
+    .price-promo{
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 20px;
+        width: 420px;
+        line-height: 1.8;
+    }
+    .web-promo{
+        width: 426px;
+    }
+    .price-btn{
+        width: 260px;
+        font-weight: 400;
+        font-size: 18px;
+        padding: 5px 23px 7px;
+        margin-top: 30px;
+    }
+    .price-btn span{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .les-btn{
+        margin-top: 57px;
+    }
+    .btn-web{
+        margin-top: 60px;
+    }  
+    .footer-container{
+        max-width: 1600px;
+        padding: 0 131px 55px;
+    }
+    .footer-logo{
+        font-weight: 400;
+        font-size: 36px;
+    }
+    .footer-element{
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .footer-disc{
+        gap: 463px;
+    }
+    .footer-lst{
+        gap: 80px;
+    }
+    .element-with::before{
+        display: none;
+    }
+    .contact{
+        margin-top: 180px;
+        margin-bottom: 55px;
+    }
+    .contact-container{
+        max-width: 1600px;
+        padding: 0 131px 0 132px;
+        gap: 144px;
+    }
+    .title-768{
+        font-weight: 600;
+        font-size: 48px;
+        width: 269px;
+    }
+    .content-promo{
+        font-weight: 400;
+        font-size: 20px;
+        width: 654px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .contact-svg{
+        width: 425px;
+        height: 430px;
+    }
+    .contact-email{
+        width: 425px;
+        height: 70px;
+        font-weight: 400;
+        font-size: 16px;
+        padding: 20px 30px;
+    }
+    .contact-btn{
+        width: 312px;
+        height: 70px;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 20px 56px;
+    }
+    .contact-lst{
+        gap: 30px;
+    }
+
 }

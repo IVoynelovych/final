@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,7 +16,7 @@
     <header>
            <div class="container">
                 <a href="" class="logo link">Brit<span>lex</span></a>
-                <button type="button" class="btn" data-modal-open>
+                <button type="button" class="btn"  data-modal-open>
                     <svg class="burger" width="34px" height="19px">
                         <use href="./images/burger-menu.svg#burger"  ></use>
                     </svg>
@@ -34,8 +36,8 @@
     <main>
        <section class="hero">
         <div class="hero-container">
-            <div>
-                <picture>
+            <div class="wow animate__animated animate__slideInRight pict">
+                <picture >
                     <source
                       srcset="
                         ./images/len-320.webp  1x,
@@ -84,9 +86,9 @@
                       src="./images/len-320.webp "
                       alt="project photo"
                     />
-  </picture>
+                </picture>
             </div>
-            <div class="lenstart">
+            <div class="lenstart wow animate__animated animate__slideInLeft">
                 <h1 class="learnb"> 
                     Learn <span>Any Foreign </span>Language
                 </h1>
@@ -98,12 +100,158 @@
             </div>
         </div >
        </section> 
+       <section class="skill">
+        <div class="info-container">
+          <h2 class="skil">Skills</h2>
+          <ul class="list skill-lst">
+            <li class="skill-element write">
+            <svg class="bro">
+              <use href="./images/bro.svg#bros"></use>
+            </svg>
+            <h2 class="speak-title spk-title">Speaking</h2>
+            <p class="promo-write promo-speak">Improve your English skills and confidence. Live classes and interactive lessons online. 20% extra free for a limited time only</p>
+            <p class="promo-write ">Learn English online and improve your skills through our high-quality courses and resources – all designed for adult language learners.</p>
+            <button type="button" class="skill-btn wrt-btn">Learn more</button>
+            </li>
+            <li class="skill-element speak">
+            <svg class="bro type-svg">
+              <use href="./images/type.svg#type"></use>
+            </svg>
+            <h2 class="write-title speak-title">Writing </h2>
+            <p class="promo-write ">One of the most important and extensive areas of natural science, the science that studies substances, also their composition </p>
+            <button type="button" class="skill-btn">Learn more</button>
+            </li>
+            <li class="skill-element speak">
+              <svg class="bro reading-svg">
+                <use href="./images/book.svg#book"></use>
+              </svg>
+              <h2 class="speak-title read-title">Reading</h2>
+              <p class="promo-write promo-read">perception and response actions 
+                of the user resulting from the use and
+                or up coming use of the product, 
+                system or service</p>
+              <button type="button" class="skill-btn">Learn more</button>
+            </li>
+              <li class="skill-element listen">
+                <svg class="bro hear">
+                  <use href="./images/podcast.svg#podcast"></use>
+                </svg>
+                <div>
+                  <h2 class="speak-title listen-title">Listening</h2>
+                  <p class="promo-write promo-listen">Here you can find activities to practise your listening skills. Listening will help you to improve your understanding </p>
+                  <button type="button" class="skill-btn btn-listn">Learn more</button>
+                <div>
+              </li>
+          </ul>
+        </div>
+       </section>
+       <section class="about-us">
+        <div class="buss-container">
+          <h2 class="about">About Us</h2>
+          <div class="bussines">
+            <svg class="buss-svg">
+              <use href="./images/business.svg#business"></use>
+            </svg>
+            <div>
+              <h2 class="about-768">About Us</h2>
+              <p class="promo-line">The model offers a framework for discussing 
+                problems related to the user's experience, as 
+                well as possible ways and means of solving 
+                them. Application development begins at
+                the top level (strategy), where the future
+                software product is described quite
+                abstractly from the point of view of the
+                expectations of both users and the customer.
+              </p>
+              <ul class="list all-users">
+                <li class="count"><span>800</span>Pupils</li>
+                <li class="count"><span>18</span>Teachers</li>
+                <li class="count"><span>6</span>Foreign languages</li>
+              </ul>
+            </div>
+          </di >
+        </div >
+       </section>
+       <section class="price">
+        <div class="price-container">
+          <h2 class="price-title">Pricing</h2>
+          <ul class="price-lst list">
+            <li class="price-element">
+            <svg class="price-svg">
+              <use href="./images/online.svg#online"></use>
+            </svg>
+            <p class="price-disc">Self-study online course</p>
+            <p class="price-promo">
+              Start learning English online in live classes
+              with qualified EC teachers and students 
+              from all over the world.
+            </p>
+            <button type="button" class="price-btn"><span> £5.99</span> per month</button>
+            </li>
+            <li class="price-element">
+              <svg class="lesson-svg">
+                <use href="./images/lesson.svg#lesson"></use>
+              </svg>
+              <p class="price-disc">Live online classes</p>
+              <p class="price-promo lesson-promo">
+                Interactive group classes with expert 
+                teachers. Free 7-day trial
+              </p>
+              <button type="button" class="price-btn les-btn"><span>  £12.99</span> per month</button>
+              </li>
+              <li class="price-element">
+                <svg class="web-svg">
+                  <use href="./images/web.svg#web"></use>
+                </svg>
+                <p class="price-disc">Personal Tuition</p>
+                <p class="price-promo web-promo">
+                  Online one-to-one English tutoring – enjoy 
+                  our first session for only $1
+                </p>
+                <button type="button" class="price-btn btn-web"><span>  £20.99</span> per month</button>
+                </li>
+          </ul>
+        </div>
+       </section>
+       <section class="contact">
+        <div class="contact-container">
+          <h2 class="contact-title">Contact Us</h2>
+          <svg class="contact-svg">
+            <use href="./images/contact.svg#contact"></use>
+          </svg>
+         <div>
+            <h2 class="title-768">Contact Us</h2>
+            <p class="content-promo">Discover your current English level by 
+              taking our free online English test.
+              Sign up to our newsletter for learning tips
+              and free resource
+            </p>
+            <div class="contact-lst">
+              <form>
+                <input type="email" placeholder="Enter Your E-mail" class="contact-email">
+              </form>
+              <button type="button" class="contact-btn">Subscribe</button>
+            </div >
+         </div>
+        </div>
+       </section>
     </main>
-    </div>
-    <div class="modal-back is-hidden" data-modal="">
-    <div class="modal ">
+    <footer>
+      <div class="footer-container">
+        <div class="footer-disc">
+          <a href="" class="footer-logo link">Brit<span>lex</span></a>
+          <ul class="footer-lst list">
+            <li class="footer-element">Terms and Conditions</li>
+            <li class="footer-element element-with">Privacy Policy</li>
+            <li class="footer-element element-with">Cookie Policy</li>
+          </ul>
+        </di >
+      </div>
+    </footer>
+    <div class="modal-back is-hidden" data-modal>
+    <div class="modal">
         <a href="" class="modal-logo link"><span>Brit</span>lex</a>
-            <button type="button" class="modal-btn" data-modal-close>
+            <button type="button" class="modal-btn"  data-modal-close>
                 <svg class="cross"width="34px" height="34px">
                     <use href="./images/cross.svg#cross"></use>
                 </svg>
@@ -119,7 +267,12 @@
             <a href="" class="modal-lets link">Let's talk</a>
         </nav> 
     </div>
-</div>
+    </div>
     <script src="./model.js"></script>
+    <script src="wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    
 </body>
 </html>
