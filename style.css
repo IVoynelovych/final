@@ -279,10 +279,11 @@ color: #8F95A5;
     font-weight: 600;
 font-size: 18px;
 margin-left: 13px;
+margin-bottom: 18px;
+margin-top: 43px;
 }
 
 .speak-btn {
-    position: absolute;
     padding: 14px 43px;
     border: none;
     background-color: #263238;
@@ -290,7 +291,7 @@ margin-left: 13px;
     font-weight: 500;
     font-size: 14px;
 margin-left: 16px;
-margin-bottom:45px ;
+margin-bottom:44px ;
 }
 .skill-btn{
     padding: 14px 43px;
@@ -315,7 +316,7 @@ height: 80px;
     font-weight: 400;
 font-size: 12px;
 color: #8F95A5;
-margin-bottom:30px ;
+margin-bottom:40px ;
 margin-left: 16px;
 }
 .promo-type{
@@ -369,8 +370,9 @@ color: #2A3246;
 .price-container{
     max-width: 320px;
     padding: 0 19px;
-    margin: 84px auto 0;
+    margin: 0 auto 0;
 }
+
 .price-title{
     width: 85px;
     height: 80px;
@@ -613,7 +615,6 @@ font-size: 14px;
         gap: 30px;
     }
     .skill-btn{
-        margin-top: 134px;
         margin-bottom: 36px;
         padding: 14px 56px;
     }
@@ -624,6 +625,22 @@ font-size: 14px;
     .type-svg{
         width: 182px;
         height: 182px;
+    }
+    .promo-write{
+        margin-bottom: 24px;
+        width: 173px;
+    }
+    .promo-575{
+        width: 180px;
+    }
+    .promo-listen{
+        width: 181px;
+    }
+    .promo-speak{
+        width: 181px;
+    }
+    .type-btn{
+        margin-top: 110px;
     }
     .reading-svg{
         width: 198px;
@@ -653,6 +670,10 @@ font-size: 14px;
         font-size: 16px;
         width: 486px;
         margin-bottom: 0;
+    }
+    .speak-title{
+        margin-top: 18px;
+        margin-bottom: 18px;
     }
     .strtbtn{
         font-size: 18px;
@@ -1019,12 +1040,11 @@ margin-top: 10px;
     .type-svg{
         width: 200px;
         height: 200px;
-        margin-top: 14px;
     }
     .reading-svg{
         width: 216px;
         height: 144px;
-        margin-top: 34px;
+        margin-top: 20px;
     }
     .hear{
         width: 202px;
@@ -1656,6 +1676,7 @@ height: 338px;
     .reading-svg{
         width: 390px;
         height: 264px;
+        margin-top: 23px;
     }
     .hear{
         width: 408px;
