@@ -192,13 +192,15 @@ button{
     padding-top: 36px;
     margin: 0 auto;
 }
+.hero{
+    padding-top: 36px;
+}
 .hero-container{
     align-items: center;
     position: relative;
     max-width: 320px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 36px;
     margin: 0 auto;
 }
 
@@ -242,8 +244,8 @@ color: #8F95A5;
 }
 /*info*/
 .skill{
-    margin-top: 53px ;
-    margin-bottom: 50px;
+    padding-top: 53px ;
+    padding-bottom: 50px;
 }
 .info-container {
     max-width: 320px;
@@ -327,7 +329,7 @@ margin-bottom:30px ;
 margin-left: 16px;
 }
 .about-us{
-    margin-bottom: 84px;
+    padding-bottom: 84px;
 }
 .buss-container{
     max-width: 320px;
@@ -355,6 +357,10 @@ margin-top: 23px;
 .count + .count{
     margin-top: 23px;
 }
+.footer-element:hover{
+    cursor: pointer;
+    color:rgb(64, 109, 180) ;
+}
 .count{
     font-weight: 400;
 font-size: 15px;
@@ -375,7 +381,6 @@ color: #2A3246;
 
 .price-title{
     width: 85px;
-    height: 80px;
     font-weight: 600;
     font-size: 24px;
     margin: 0 auto 49px;
@@ -495,7 +500,8 @@ margin-right: 12px;
     border-radius: 5px;
 }
 .contact{
-    margin: 72px 0 55px;
+    padding-top: 72px;
+    padding-bottom: 55px;
 }
 .contact-container {
     max-width: 320px;
@@ -565,13 +571,12 @@ margin: 0 auto;
         border-radius: 5px;
     }
     .about-us{
-        margin-bottom: 130px;
+        padding-bottom: 130px;
     }
     .pict{
         margin-left: 25px;
     }
     .buss-container{
-        margin-top: 84px;
         max-width: 575px;
         padding: 0 33px 0 32px;
     }
@@ -683,8 +688,8 @@ font-size: 14px;
         width: 305px;
     }
     .skill{
-        margin-top: 96px ;
-        margin-bottom: 84px;
+        padding-top: 96px ;
+        padding-bottom: 84px;
     }
     .info-container{
         max-width: 575px;
@@ -726,9 +731,16 @@ font-size: 14px;
     .price-container{
         max-width: 575px;
         padding: 0 22px 0 38px;
-        margin-top: 130px;
+        
+    }
+    .skil{
+        width: 78px;
+        height: 101px;
+        font-weight: 600;
+        font-size: 30px;
     }
     .price-title{
+        width: 106px;
         font-weight: 600;
 font-size: 30px;
 margin-bottom: 54px;
@@ -797,7 +809,7 @@ font-size: 22px;
         height: 2px;
     }
     .contact{
-        margin: 163px 0 144px;
+        padding: 163px 0 144px;
     }
     .contact-container{
         max-width: 575px;
@@ -856,7 +868,7 @@ font-size: 22px;
         border-radius: 5px;
     }
     .about-us{
-        margin-bottom: 93px;
+        padding-bottom: 93px;
     }
     .buss-container{
         max-width: 768px;
@@ -957,8 +969,8 @@ margin-top: 10px;
         margin-top: 32px;
     }
     .skill{
-        margin-top: 56px ;
-        margin-bottom: 52px;
+        padding-top: 56px ;
+        padding-bottom: 52px;
     }
     .info-container{
         max-width: 768px;
@@ -1103,7 +1115,7 @@ margin-top: 10px;
     .price-container{
         max-width: 768px;
         padding: 0 38px 0 25px;
-        margin-top: 90px;
+       
     }
     .price-lst{
         align-items: last baseline;
@@ -1132,7 +1144,13 @@ margin-top: 10px;
         width: 174px;
         height: 56px;
     }
+    .skil{
+        font-weight: 600;
+        font-size: 30px;
+        width: 78px;
+    }
     .price-title{
+        
         font-weight: 600;
         font-size: 30px;
         margin-bottom: 26px;
@@ -1185,8 +1203,8 @@ margin-top: 23px;
         gap: 261px;
     }
     .contact{
-        margin-top: 65px;
-        margin-bottom: 141px;
+        padding-top: 65px;
+        padding-bottom: 141px;
     }
     .contact-container{
         max-width: 768px;
@@ -1247,7 +1265,7 @@ margin-top: 23px;
         border-radius: 5px;
     }
     .about-us{
-        margin-bottom: 125px;
+        padding-bottom: 125px;
     }
     .buss-container{
         max-width: 992px;
@@ -1328,8 +1346,8 @@ margin-top: 35px;
         display: flex;
     }
     .skill{
-        margin-top: 47px ;
-        margin-bottom: 106px;
+        padding-top: 47px ;
+        padding-bottom: 106px;
     }
     .info-container{
         max-width: 992px;
@@ -1411,7 +1429,6 @@ margin-top: 35px;
     .price-container{
         max-width: 992px;
         padding: 0 25px 0 32px;
-        margin-top: 125px;
     }
     .price-lst{
         gap: 0;
@@ -1432,6 +1449,12 @@ margin-top: 35px;
         margin-bottom: 5px;
     }
     .price-title{
+        width: 126px;
+        font-weight: 600;
+        font-size: 36px;
+    }
+    .skil{
+        width: 93px;
         font-weight: 600;
         font-size: 36px;
     }
@@ -1483,8 +1506,8 @@ margin-top: 14px;
         gap: 422px;
     }
     .contact{
-        margin-top: 146px;
-        margin-bottom: 157px;
+        padding-top: 146px;
+        padding-bottom: 157px;
     }
     .contact-container{
         max-width: 992px;
@@ -1526,12 +1549,11 @@ margin-top: 14px;
 
 @media screen and (min-width:1600px){
     .about-us{
-        margin-bottom: 180px;
+        padding-bottom: 180px;
     }
     .buss-container{
         max-width: 1600px;
         padding: 0 130px;
-        margin-top: 180px;
     }
     .bussines{
         gap: 137px;
@@ -1620,8 +1642,8 @@ font-size: 48px;
         font-size: 20px;
     }
     .skill{
-        margin-top: 180px ;
-        margin-bottom: 180px;
+        padding-top: 180px ;
+        padding-bottom: 180px;
     }
     .info-container{
         max-width: 1600px;
@@ -1699,7 +1721,6 @@ height: 338px;
     .price-container{
         max-width: 1600px;
         padding: 0 131px;
-        margin-top: 180px;
     }
     .promo-read{
         width: 354px;
@@ -1722,7 +1743,13 @@ height: 338px;
         height: 320px;
         margin-bottom: 31px;
     }
+    .skil{
+        width: 124px;
+        font-weight: 600;
+        font-size: 48px;
+    }
     .price-title{
+        width: 169px;
         font-weight: 600;
         font-size: 48px;
         margin-bottom: 60px;
@@ -1784,8 +1811,8 @@ height: 338px;
         display: none;
     }
     .contact{
-        margin-top: 180px;
-        margin-bottom: 55px;
+        padding-top: 180px;
+        padding-bottom: 55px;
     }
     .contact-container{
         max-width: 1600px;
