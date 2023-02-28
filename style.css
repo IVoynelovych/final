@@ -124,7 +124,7 @@ button{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(7, 34, 47, 0.7);
     overflow: scroll;
   }
 .modal-logo {
@@ -138,7 +138,7 @@ button{
 }
 .modal-btn {
     position: absolute;
-    top: 25px;
+    top: 0;
     right: 7px;
     background-color: transparent;
     border: transparent;
@@ -213,6 +213,9 @@ margin-left:40px ;
 margin-right: 40px;
 
 }
+.learnb span{
+    display: inline;
+}
 .promo {
     font-weight: 400;
     font-size: 14px;
@@ -228,8 +231,8 @@ color: #8F95A5;
     content: "";
     display: none;
     background: url(./images/light.svg);
-    height: 90px;
-    width: 90px;
+    height: 51px;
+    width: 51px;
     fill: #000000;
 }
 .strtbtn {
@@ -314,11 +317,15 @@ font-size: 24px;
 width: 62px;
 height: 80px;
 }
+.modal-cont{
+    max-width: 320px;
+    position: relative;
+}
 .promo-write{
     font-weight: 400;
-font-size: 12px;
+font-size: 13px;
 color: #8F95A5;
-margin-bottom:40px ;
+margin-bottom:32px ;
 margin-left: 16px;
 }
 .promo-type{
@@ -559,6 +566,9 @@ margin: 0 auto;
     color: #FFFFFF;
 
 }
+.burger{
+    display: block;
+}
 @media screen and (min-width:575px){
     .element-with::before{
         display: block;
@@ -604,6 +614,10 @@ font-size: 14px;
         padding-left: 32px;
         padding-right: 50px;
         padding-top: 39px;
+    }
+    .burger{
+        width: 42px;
+        height: 24px;
     }
     .hero-container{
         max-width: 575px;
@@ -710,10 +724,13 @@ font-size: 14px;
         padding-top: 48px;
         padding-right: 32px;
         padding-left: 33px;
+        padding-bottom: 20px;
+    }
+    .modal-cont{
+        max-width: 510px;
     }
     .modal-btn{
-        right: 87px;
-        top: 50px;
+        transform: translateY(5%);
     }
     .cross{
         width: 39px;
@@ -806,7 +823,7 @@ font-size: 22px;
     }
     .footer-container::before{
         display: block;
-        height: 2px;
+        height: 1px;
     }
     .contact{
         padding: 163px 0 144px;
@@ -930,6 +947,10 @@ margin-top: 10px;
         padding-left: 39px;
         padding-right: 17px;
     }
+    .burger{
+        width: 30px;
+        height: 19px;
+    }
     .lenpic{
         width: 352px;
         height: 352px;
@@ -950,9 +971,9 @@ margin-top: 10px;
     .learnb::after{
         position: absolute;
         display: block;
-        width: 90px;
-        height: 90px;
-        transform: translate(240%, -100%);
+        width: 51px;
+        height: 51px;
+        transform: translate(420%, -140%);
     }
     .promo{
         margin-top: 25px; 
@@ -1083,22 +1104,21 @@ margin-top: 10px;
         top: 53px;
         right: 39px;
     }
-    .burger{
-        width: 30px;
-        height: 17px;
-    }
     .modal {
         width: 429px;
         padding-top: 39px;
         padding-right: 39px;
         padding-left: 26px;
+        padding-bottom: 30px;
     }
     .modal-nav-menu{
         margin-bottom: 80px;
     }
+    .modal-cont{
+        width: 364px;
+    }
     .modal-btn{
-        right: 87px;
-        top: 40px
+        transform: translateX(8%);
     }
     .skill-btn{
         margin-left: 17px;
@@ -1118,6 +1138,7 @@ margin-top: 10px;
        
     }
     .price-lst{
+
         align-items: last baseline;
         display: flex;
     }
@@ -1142,7 +1163,6 @@ margin-top: 10px;
     .price-disc{
         text-align: left;
         width: 174px;
-        height: 56px;
     }
     .skil{
         font-weight: 600;
@@ -1224,6 +1244,7 @@ margin-top: 23px;
         margin-left: 0;
     }
     .contact-svg{
+        margin: 0;
         width: 233px;
         height: 210px;
     }
@@ -1310,7 +1331,6 @@ margin-top: 35px;
     .hero-container{
         gap: 57px;
         max-width: 992px;
-        padding-top: 76px;
         padding-left: 30px;
         padding-right:20px ;
     }
@@ -1326,7 +1346,9 @@ margin-top: 35px;
         height: 192px;
     }
     .learnb::after{
-        transform: translate(320%, -100%);
+        width: 59px;
+        height: 59px;
+        transform: translate(530%, -150%);
     }
     .promo{
         width: 421px;
@@ -1594,7 +1616,6 @@ font-size: 48px;
     .hero-container{
         max-width: 1600px;
         padding: 0 131px;
-        margin-top: 63px;
         gap: 145px;
     }
     .lenpic{
@@ -1608,8 +1629,9 @@ font-size: 48px;
         margin: 0;
     }
     .learnb::after{
-
-        transform: translate(450%,-130%);
+        width: 85px;
+        height: 85px;
+        transform: translate(500%,-150%);
     }
     .promo{
         width: 540px;
@@ -1776,7 +1798,7 @@ height: 338px;
         width: 260px;
         font-weight: 400;
         font-size: 18px;
-        padding: 5px 23px 7px;
+        padding: 11px 23px 7px;
         margin-top: 30px;
     }
     .price-btn span{
@@ -1784,10 +1806,10 @@ height: 338px;
         font-size: 24px;
     }
     .les-btn{
-        margin-top: 57px;
+        margin-top: 67px;
     }
     .btn-web{
-        margin-top: 60px;
+        margin-top: 68px;
     }  
     .footer-container{
         max-width: 1600px;
